@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+# Type stubs Claude Code writes beside a mod it loads from a folder.
+.claude-plugin/types/

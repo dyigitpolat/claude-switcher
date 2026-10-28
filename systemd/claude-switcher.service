@@ -1,0 +1,20 @@
+[Unit]
+Description=Claude account switcher: rotates Claude Code logins by usage, reports to Telegram
+# Never give up restarting it.
+StartLimitIntervalSec=0
+
+[Service]
+Type=notify
+NotifyAccess=main
+Environment=PYTHONPATH=@REPO@
+Environment=PYTHONUNBUFFERED=1
+ExecStart=@PYTHON@ -m claude_switcher daemon
+Restart=always
+RestartSec=20
+# The main loop pings every few seconds; a hang this long gets it restarted.
+WatchdogSec=900
+# Everything it writes holds tokens: keep it to this user.
+UMask=0077
+
+[Install]
+WantedBy=default.target

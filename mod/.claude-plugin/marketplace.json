@@ -1,0 +1,12 @@
+{
+  "name": "claude-switcher",
+  "description": "The rc-keeper mod that claude-switcher's install.sh adds to Claude Code",
+  "owner": { "name": "claude-switcher contributors" },
+  "plugins": [
+    {
+      "name": "rc-keeper",
+      "source": "./rc-keeper",
+      "description": "Reconnects Remote Control after claude-switcher moves this machine to another Claude account"
+    }
+  ]
+}

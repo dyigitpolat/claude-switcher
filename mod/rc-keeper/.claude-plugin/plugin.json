@@ -1,0 +1,7 @@
+{
+  "name": "rc-keeper",
+  "version": "0.1.0",
+  "description": "Reconnects Remote Control after claude-switcher moves this machine to another Claude account",
+  "author": { "name": "claude-switcher contributors" },
+  "license": "MIT"
+}
